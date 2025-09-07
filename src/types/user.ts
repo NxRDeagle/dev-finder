@@ -1,17 +1,32 @@
 export interface IGithubUser {
   login: string;
-  id: number;
-  avatarUrl: string;
+  avatar: string;
   name: string;
   company: string;
   blog: string;
   location: string;
   bio: string;
-  twitterUsername: string;
-  publicRepos: number;
+  twitter: string;
+  repos: number;
   followers: number;
   following: number;
-  createdAt: string;
+  created: string;
+}
+
+export interface IGithubUserResponse {
+  login: string;
+  id: number;
+  avatar_url: string;
+  name: string;
+  company: string;
+  blog: string;
+  location: string;
+  bio: string;
+  twitter_username: string;
+  public_repos: number;
+  followers: number;
+  following: number;
+  created_at: string;
 }
 
 export interface IGithubError {
